@@ -1,0 +1,41 @@
+ .Nav .Desktop-Nav{
+   display: none;
+  }
+ .active-Nav{
+    background-color: #FFF;
+    color: var(--primary);
+  }
+  .collapse{
+    display: none;
+  }
+  .Mobile-Nav .breadcrumb{
+   color: var(--primary);
+   font-size: 24px;
+  }
+  .Mobile-Nav .nav-container{
+   position: absolute;
+   width: 100%;
+   background-color:var(--primary);
+   top: 50px;
+   left: 0;
+   transition: 0.5s;
+  }
+  .nav-list{
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .Mobile-Nav .nav-container .nav-list{
+   display: block;
+   text-align: center;
+  }
+  
+
+  @media only screen and (min-width: 768px) {
+    .Nav .Mobile-Nav{
+        display: none;
+      }
+    .Nav .Desktop-Nav{
+        display: flex;
+    }
+  }
+  
